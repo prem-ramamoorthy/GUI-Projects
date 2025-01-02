@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 window = Tk()
 window.geometry("1550x700")
 window.title("Harbor Ship Management")
-icon_image = PhotoImage(file=r"static\images\png-transparent-harbor-ship-line-art.png")
+icon_image = PhotoImage(file=r"GUI-Projects\GUI\static\images\png-transparent-harbor-ship-line-art.png")
 window.iconphoto(True, icon_image)
 window.config(background="#80b7b0")
 def distribute_containers_among_ships(ships, containers):
