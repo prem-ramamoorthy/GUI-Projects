@@ -69,7 +69,7 @@ def submit():
     scrolling_label.update_text(text)
     query = generate_query(text, data)
     Query_label.update_text(query)
-    with open(r"GUI\query.txt", "w") as f:
+    with open(r"GUI-Projects\GUI\query.txt", "w") as f:
         f.write(query)   
 tree = None
 def toggle_treeview():
@@ -137,21 +137,21 @@ style.configure("Custom.Treeview", background="#3F4D52", foreground="white", fon
 style.map("Custom.Treeview", background=[("active", "#4C5B5F"), ("selected", "#2C383C")], foreground=[("selected", "white")])
 
 
-side_button_image = Image.open(r"GUI\static\images\sidebar.png").resize((50, 50))
+side_button_image = Image.open(r"GUI-Projects\GUI\static\images\sidebar.png").resize((50, 50))
 side_button_main = ImageTk.PhotoImage(side_button_image)
 Button(window, command=toggle_treeview, image=side_button_main, 
        bg="#3F4D52", relief="flat", activebackground="#3F4D52").place(x=0, y=0)
-logo_image = Image.open(r"GUI\static\images\talkdb logo w.png").resize((300, 150))
+logo_image = Image.open(r"GUI-Projects\GUI\static\images\talkdb logo w.png").resize((300, 150))
 logo = ImageTk.PhotoImage(logo_image)
 Label(window, bg="#3F4D52", image=logo).pack()
 entry_bar = Entry(window, font=("Arial", 16), relief="groove", width=40, bg="#3F4D52", fg="white")
 entry_bar.insert(0, "")
 entry_bar.place(x=10, y=350)
-send_button_image = Image.open(r"GUI\static\images\send button.png").resize((25, 25))
+send_button_image = Image.open(r"GUI-Projects\GUI\static\images\send button.png").resize((25, 25))
 send_button_resized = ImageTk.PhotoImage(send_button_image)
 Button(window, command=submit, image=send_button_resized, 
        bg="#3F4D52", relief="flat", activebackground="#3F4D52").place(x=500, y=350)
-delete_button_image = Image.open(r"GUI\static\images\Delete-Button.png").resize((25, 25))
+delete_button_image = Image.open(r"GUI-Projects\GUI\static\images\Delete-Button.png").resize((25, 25))
 delete_button_resized = ImageTk.PhotoImage(delete_button_image)
 Button(window, command=lambda: entry_bar.delete(0, END), image=delete_button_resized, 
        bg="#3F4D52", relief="flat", activebackground="#3F4D52").place(x=530, y=350)
