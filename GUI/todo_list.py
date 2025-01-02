@@ -5,10 +5,10 @@ background_color = "#8ec8e2"
 font_color = "#23212d"
 button_background = "#729296"
 font_details = ("Georgia", 12)
-window.iconphoto(True, PhotoImage(file=r"static\images\Todo_list_logo.png"))
+window.iconphoto(True, PhotoImage(file=r"GUI-Projects\GUI\static\images\Todo_list_logo.png"))
 window.config(background=background_color)
 window.geometry("500x500")
-image_logo = PhotoImage(file=r"static\images\to-do-list-logo_1-1-30.png")
+image_logo = PhotoImage(file=r"GUI-Projects\GUI\static\images\to-do-list-logo_1-1-30.png")
 Label_image = Label(window, image=image_logo, background=background_color)
 Label_image.pack(side="top")
 todo_list_creater = Entry(window)
